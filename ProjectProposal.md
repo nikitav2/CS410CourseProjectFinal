@@ -2,8 +2,8 @@
 ## In your proposal, please answer the following questions:
 What are the names and NetIDs of all your team members? Who is the captain? The captain will have more administrative duties than team members.
 
-Nikita Volynskiy (nikitav2) Captain
-James Rockey (jrockey2) Project Designer
+Nikita Volynskiy (nikitav2) Captain nikitav2@illinois.edu
+James Rockey (jrockey2) Project Designer jrockey2@illinois.edu
 
 ## What is your free topic? Please give a detailed description. What is the task? Why is it important or interesting? What is your planned approach? What tools, systems or datasets are involved? What is the expected outcome? How are you going to evaluate your work?
 
