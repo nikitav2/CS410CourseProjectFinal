@@ -403,4 +403,4 @@ Right click on the link in the terminal to open application on the browser
 
 ## James
 
-- Implemented web application
+- Implemented web application.
