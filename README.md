@@ -1,3 +1,4 @@
+
 # Course Project Overview
 
 *This document serves as the documentation of our final project for CS 410: Text Information Systems at UIUC.*
@@ -405,3 +406,17 @@ Right click on the link in the terminal to open application on the browser
 ## James
 
 - Implemented web application.
+
+
+# Resources Used
+
+ - Scikit Label Encoder -
+https://snyk.io/advisor/python/sklearn/functions/sklearn.preprocessing.LabelEncoder
+- Markdown Language - https://www.markdownguide.org/basic-syntax/#unordered-lists
+- Resume Dataset - https://www.kaggle.com/datasets/gauravduttakiit/resume-dataset
+- Job Description Dataset - https://www.kaggle.com/datasets/marcocavaco/scraped-job-descriptions
+- Resume NLP Processing -https://www.analyticsvidhya.com/blog/2021/06/resume-screening-with-natural-language-processing-in-python/
+- TfIdf Vectorizer - https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html
+- Pandas - https://pandas.pydata.org/docs/
+-  Flask - https://flask.palletsprojects.com/en/2.2.x/
+- LDA Modeling - https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24
