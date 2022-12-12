@@ -175,6 +175,7 @@ Please Feel free to watch the video demonstrating the purpose of our project, ho
 		print(le.classes_[y_pred_unseen][0])
 
 		```
+		9. After our model gives us a job prediction based off the user's resume, we utilize the spacy Python nlp library to calculate the similarity between the resume labels and the job description labels. From this, we display the jobs from the k-highest similarity job descriptions.
 
 	- Model Accuracy:
 
@@ -182,37 +183,6 @@ Please Feel free to watch the video demonstrating the purpose of our project, ho
 
 		- 97% on Test Set
 
--  **MultinomialNB Classifier**
-
-	- Using the dataset which can be found at: ```/app/data/UpdatedResumeDataSet.csv```. The dataset contains a relationship between Resumes and Job Titles. *The input of the data is expected to be a string (you will have to write your own code if you are not passing in a string).*
-
-	- The steps of the classifier are:
-
-		1. Clean the data.
-
-			- Look for symbols, extra spaces, non-alphabetical characters. This is done by the *cleanResume* function located in *load_models.py*. The return string should be english alphabet words separated by one space each.
-
-		2. Encode the labels of the Resume classes.
-
-		3. Use TfIDF to vectorize the words of the resume
-
-			- Default Settings are sublinear_TF = true, stop_words = 'english', max_features = 1500.
-
-		4. Generate word features using the word_vectorizer built in step 3.
-
-		5. Generate a train and test set with test_size equalling 0.2
-
-		6. Specify the model as *MultinomialNB()* and run a prediction on the set.
-
-		7. Save model on your local computer to use later in the code.
-
-		8. Predict new data by passing a resume in string format to the model and generate prediction.
-
-	- Model Accuracy:
-
-		- 99% on Training Set
-
-		- 98% on Test Set
 
 ### Predicting Job Title From Job Description
 
@@ -249,6 +219,38 @@ Please Feel free to watch the video demonstrating the purpose of our project, ho
 		- 97% on Training Set
 
 		- 63% on Test Set
+
+-  **MultinomialNB Classifier**
+
+	- Using the dataset which can be found at: ```/app/data/UpdatedResumeDataSet.csv```. The dataset contains a relationship between Resumes and Job Titles. *The input of the data is expected to be a string (you will have to write your own code if you are not passing in a string).*
+
+	- The steps of the classifier are:
+
+		1. Clean the data.
+
+			- Look for symbols, extra spaces, non-alphabetical characters. This is done by the *cleanResume* function located in *load_models.py*. The return string should be english alphabet words separated by one space each.
+
+		2. Encode the labels of the Resume classes.
+
+		3. Use TfIDF to vectorize the words of the resume
+
+			- Default Settings are sublinear_TF = true, stop_words = 'english', max_features = 1500.
+
+		4. Generate word features using the word_vectorizer built in step 3.
+
+		5. Generate a train and test set with test_size equalling 0.2
+
+		6. Specify the model as *MultinomialNB()* and run a prediction on the set.
+
+		7. Save model on your local computer to use later in the code.
+
+		8. Predict new data by passing a resume in string format to the model and generate prediction.
+
+	- Model Accuracy:
+
+		- 99% on Training Set
+
+		- 98% on Test Set
 
 
   
