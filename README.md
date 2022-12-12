@@ -324,6 +324,7 @@ The user will run interact with the UI on our web-server. The user will be promp
 		- List of job titles and their job descriptions corresponding to the predicted job title of the inputted resume.
 
   
+	It will take around 1 minute the first time either of these methods are run, as our program takes time to build and train the three different models.
   
 
 # Installation
