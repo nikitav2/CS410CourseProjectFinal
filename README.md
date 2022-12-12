@@ -346,9 +346,9 @@ python == 3.9
 ## Getting started
 
 ```bash
-git clone https://github.com/jamesrockey/CS-410-App.git
+git clone https://github.com/nikitav2/CS410CourseProjectFinal.git
 
-cd CS-410-App
+cd CS410CourseProjectFinal
 
 python3.9 -m venv .venv
 
