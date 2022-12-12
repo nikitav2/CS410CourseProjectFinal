@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<button type="button" onclick="location.href = '/';" style="height:75px;width:150px;background-color:powderblue"> Home </button>
+<html>
+    <head>
+        <title>Compare Similarity</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="{{ url_for('static', filename='img/university-of-illinois-logo.png') }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/custom.css') }}">
+
+    </head>
+
+    <body>
+
+    <main role="main" class="container extra-bottom">
+      <h1 class="mt-5">Compare Similarity Between Job Posting and Resume</h1>
+      <p>We utilize our KNN classifier on a user's resume and compare with the classification of the job description using Random Forests</p>
+    </main>
+
+
+    <form action="/measuresim" method="POST">
+        
+        <center><strong>Paste your resume here</strong></center>
+        <center>
+          <!-- <input type="file" id="myFile" name="filename">
+          <input type="text" id="fname" name="ResumeStr" style="height:20px;width:300px" placeholder="or copy and paste resume" autocomplete="off"> -->
+          <textarea name="ResumeStr" cols="40" rows="5"></textarea>
+        </center>
+        <center><strong>Paste job description here</strong></center>
+        <center><textarea name="JobDescrStr" cols="40" rows="5"></textarea></center>
+        <center><input type="submit"></center>
+    </form>
+
+    <center><p>Resume Prediction (KNN): {{ res }}</p></center>
+    <center><p>Resume Prediction (Multinomial): {{ res2 }}</p></center>
+    <center><p>Job Prediction: {{ job }}</p></center>
+
+
+
+    <footer class="footer">
+      <div class="container">
+            <p class="text-muted"><small>App developed for CS410 @UIUC by James Rockey (jrockey2) and Nikita Volynskiy (nikitav2)</small></p>
+      </div>
+    </footer>
+  </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='script/modal.js') }}"></script>
+
+</html>
+
+
+
+
+
+
+
