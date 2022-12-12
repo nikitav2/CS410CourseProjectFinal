@@ -2,12 +2,6 @@ runtime: python38 # or another supported version
 
 instance_class: F1
 
-env_variables:
-  MYSQL_USER: <root> # please put in your credentials
-  MYSQL_PASSWORD: <1234> # please put in your credentials
-  MYSQL_DB: <illini-invest-0> # please put in your credentials
-  MYSQL_HOST: <34.123.105.114> # please put in your credentials
-
 handlers:
 # Matches requests to /images/... to files in static/images/...
 - url: /img

@@ -7,9 +7,7 @@ from app import model as model_helper
 @app.route("/")
 def homepage():
     """ returns rendered homepage """
-    # items = db_helper.fetch_todo()
-    items = []
-    return render_template("index.html", items=items)
+    return render_template("index.html")
 
 
 @app.route("/m1")
